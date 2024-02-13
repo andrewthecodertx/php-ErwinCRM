@@ -1,0 +1,11 @@
+<h2>customers</h2>
+<ul>
+  <?php foreach ($customers as $customer) : ?>
+    <li>
+      <div>
+        <?= $customer['company_name']; ?>
+      </div>
+      <?= $customer->interactions; ?>
+      <?= $customer->notes; ?>
+    <?php endforeach ?>
+</ul>
